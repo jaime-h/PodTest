@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22B3A4061DB6951200321598"
-               BuildableName = "PodTest.app"
-               BlueprintName = "PodTest"
-               ReferencedContainer = "container:PodTest.xcodeproj">
+               BlueprintIdentifier = "DCE78341742CB6E1577F9773EA9AA84B"
+               BuildableName = "Pods_PodTest.framework"
+               BlueprintName = "Pods-PodTest"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22B3A4061DB6951200321598"
-            BuildableName = "PodTest.app"
-            BlueprintName = "PodTest"
-            ReferencedContainer = "container:PodTest.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22B3A4061DB6951200321598"
-            BuildableName = "PodTest.app"
-            BlueprintName = "PodTest"
-            ReferencedContainer = "container:PodTest.xcodeproj">
+            BlueprintIdentifier = "DCE78341742CB6E1577F9773EA9AA84B"
+            BuildableName = "Pods_PodTest.framework"
+            BlueprintName = "Pods-PodTest"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22B3A4061DB6951200321598"
-            BuildableName = "PodTest.app"
-            BlueprintName = "PodTest"
-            ReferencedContainer = "container:PodTest.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
