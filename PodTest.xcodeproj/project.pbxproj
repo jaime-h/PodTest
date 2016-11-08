@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223172471DB9A9E500484821 /* InterActiveChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223172461DB9A9E500484821 /* InterActiveChart.swift */; };
+		2260764C1DB9C2D200751D86 /* DataPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260764B1DB9C2D200751D86 /* DataPoints.swift */; };
 		22B3A40B1DB6951200321598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A40A1DB6951200321598 /* AppDelegate.swift */; };
 		22B3A40D1DB6951200321598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A40C1DB6951200321598 /* ViewController.swift */; };
 		22B3A4101DB6951200321598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A40E1DB6951200321598 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		2132B86F32A3F81E5464A927 /* Pods-PodTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodTest/Pods-PodTest.release.xcconfig"; sourceTree = "<group>"; };
+		223172461DB9A9E500484821 /* InterActiveChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterActiveChart.swift; sourceTree = "<group>"; };
+		2260764B1DB9C2D200751D86 /* DataPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoints.swift; sourceTree = "<group>"; };
 		22B3A4071DB6951200321598 /* PodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3A40A1DB6951200321598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B3A40C1DB6951200321598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 			children = (
 				22B3A40A1DB6951200321598 /* AppDelegate.swift */,
 				22B3A40C1DB6951200321598 /* ViewController.swift */,
+				2260764B1DB9C2D200751D86 /* DataPoints.swift */,
+				223172461DB9A9E500484821 /* InterActiveChart.swift */,
 				22B3A40E1DB6951200321598 /* Main.storyboard */,
 				22B3A4111DB6951200321598 /* Assets.xcassets */,
 				22B3A4131DB6951200321598 /* LaunchScreen.storyboard */,
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3A40D1DB6951200321598 /* ViewController.swift in Sources */,
+				223172471DB9A9E500484821 /* InterActiveChart.swift in Sources */,
+				2260764C1DB9C2D200751D86 /* DataPoints.swift in Sources */,
 				22B3A40B1DB6951200321598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
