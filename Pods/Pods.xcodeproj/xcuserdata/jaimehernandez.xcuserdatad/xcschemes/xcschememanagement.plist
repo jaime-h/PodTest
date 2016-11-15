@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ScrollableGraphView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftCharts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>12201E699844BEAA47F3DE373BCDC242</key>
+		<key>50B955864BB3CD5C2BACFE6169A13DB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68AD4C95DA1EB0ACF992928525CB999F</key>
+		<key>6D8004AD98F05B05D19079C535FE64A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCE78341742CB6E1577F9773EA9AA84B</key>
+		<key>9CB376AC8035D15969DAE93955A7E442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA989F85C020FD0D6FED2DEF0997EE69</key>
 		<dict>
 			<key>primary</key>
 			<true/>
