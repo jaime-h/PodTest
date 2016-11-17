@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                 // loop through the arrays and write out the data....
                 
                 let NewFormat = DateFormatter()
-                NewFormat.dateFormat = "MM-dd-yyyy HH:mm:ss"
+                NewFormat.dateFormat = "MM/dd HH:mm:ss"
                 
                 let maxPh = self.phData.max()
                 let minPh = self.phData.min()
@@ -73,11 +73,24 @@ class ViewController: UIViewController {
                 let graphView = ScrollableGraphView(frame: self.view.frame)
                 let phData = self.phData
                 let labels = self.dateData
-                graphView.set(data: phData, withLabels: labels)
                 
                 graphView.numberOfIntermediateReferenceLines = 5
-                graphView.rangeMax = 1.5
+                graphView.referenceLineNumberOfDecimalPlaces = 4
                 
+                graphView.rangeMin = minPh! as Double
+                graphView.rangeMax = maxPh! as Double
+                
+                // graphView.shouldAutomaticallyDetectRange = true
+                // graphView.shouldAdaptRange = true
+                graphView.dataPointLabelsSparsity = 3
+                graphView.lineColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
+                graphView.dataPointLabelColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
+                graphView.dataPointFillColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
+                
+                // graphView.numberOfIntermediateReferenceLines = 5
+                // graphView.rangeMax = 1.5
+                
+                graphView.set(data: phData, withLabels: labels)
                 self.view.addSubview(graphView)
                 
                 
