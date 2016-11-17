@@ -21,7 +21,7 @@ extension Double {
             return (self * divisor).rounded() / divisor
         }
     }
-
+@IBDesignable
 class ViewController: UIViewController {
 
     var phData = [Double]()
@@ -67,9 +67,6 @@ class ViewController: UIViewController {
                     
                 }
                 
-                // print(self.dataPoints)
-                // print(self.dateData)
-                
                 let graphView = ScrollableGraphView(frame: self.view.frame)
                 let phData = self.phData
                 let labels = self.dateData
@@ -86,9 +83,6 @@ class ViewController: UIViewController {
                 graphView.lineColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
                 graphView.dataPointLabelColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
                 graphView.dataPointFillColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
-                
-                // graphView.numberOfIntermediateReferenceLines = 5
-                // graphView.rangeMax = 1.5
                 
                 graphView.set(data: phData, withLabels: labels)
                 self.view.addSubview(graphView)
