@@ -10,7 +10,6 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import Foundation
-// import SwiftCharts
 import ScrollableGraphView
 
 extension Double {
@@ -77,9 +76,11 @@ class ViewController: UIViewController {
                 graphView.rangeMin = minPh! as Double
                 graphView.rangeMax = maxPh! as Double
                 
+                graphView.dataPointSpacing = 2.0
+                
                 // graphView.shouldAutomaticallyDetectRange = true
                 // graphView.shouldAdaptRange = true
-                graphView.dataPointLabelsSparsity = 3
+                graphView.dataPointLabelsSparsity = 75
                 graphView.lineColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
                 graphView.dataPointLabelColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)
                 graphView.dataPointFillColor = UIColor(red:0.00, green:0.75, blue:1.00, alpha:1.0)

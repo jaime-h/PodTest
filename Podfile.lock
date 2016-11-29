@@ -1,30 +1,18 @@
 PODS:
   - Alamofire (4.0.1)
   - ScrollableGraphView (3.0.0)
-  - SwiftCharts (0.4)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - ScrollableGraphView
-  - SwiftCharts (from `https://github.com/i-schuetz/SwiftCharts.git`)
   - SwiftyJSON
-
-EXTERNAL SOURCES:
-  SwiftCharts:
-    :git: https://github.com/i-schuetz/SwiftCharts.git
-
-CHECKOUT OPTIONS:
-  SwiftCharts:
-    :commit: 1705b493b9239cbeb74c484eb9fa9694e42e5b7d
-    :git: https://github.com/i-schuetz/SwiftCharts.git
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   ScrollableGraphView: 9b0ff86f9193068ffaf7e7ea875dcd297d7e8ded
-  SwiftCharts: 84b43d9d70b791459ff5f50ae5a6704326de309d
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: 776b7cae9a20cae64dcbd0610e1b5b0a063c8968
+PODFILE CHECKSUM: 5908fd2f3760e31bda0e7723be0d0836aed2c0c7
 
 COCOAPODS: 1.1.0.rc.3
