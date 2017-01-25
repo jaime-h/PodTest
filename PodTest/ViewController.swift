@@ -12,14 +12,6 @@ import SwiftyJSON
 import Foundation
 import ScrollableGraphView
 
-extension Double {
-        /// Rounds the double to decimal places value
-        /// http://stackoverflow.com/questions/27338573/rounding-a-double-value-to-x-number-of-decimal-places-in-swift?noredirect=1&lq=1
-        func roundTo(places:Int) -> Double {
-            let divisor = pow(10.0, Double(places))
-            return (self * divisor).rounded() / divisor
-        }
-    }
 @IBDesignable
 class ViewController: UIViewController {
 
@@ -27,6 +19,8 @@ class ViewController: UIViewController {
     var resData = [Double]()
     var dateData = [String]()
     var maxPh:Double = 0.0
+    
+    
     
     typealias dataPoint = (dateStamp: String, value: Float)
     var dataPoints = [dataPoint]()
@@ -38,8 +32,13 @@ class ViewController: UIViewController {
         // Changed to pull data for 5 days...
         let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-021/PH_EXT.json?minutes=7200"
         
-        Alamofire.request(myUrl).responseJSON { (responseData) -> Void in
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        Alamofire.request(myUrl).validate().responseJSON { (responseData) -> Void in
             if ((responseData.result.value) != nil) {
+                
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 
                 // After serialization grab the data arrays - there are two of them....
@@ -89,6 +88,21 @@ class ViewController: UIViewController {
                 self.view.addSubview(graphView)
                 
                 
+            } else {
+                // No good connection - Display network error
+                
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                
+                let ac = UIAlertController(title: "Error", message: "No Internet Connection", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+                }
+                ac.addAction(okAction)
+                self.present(ac, animated: true, completion: nil)
+                
+            }
+            
+            func okAction() {
+                print("Back to Network")
             }
 
         }
