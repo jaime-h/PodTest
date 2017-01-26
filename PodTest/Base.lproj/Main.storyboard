@@ -9,24 +9,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Real Time Data-->
+        <!--Nodes At Makaha 1-->
         <scene sceneID="rcR-L5-tXN">
             <objects>
-                <tableViewController title="Real Time Data" id="u3H-Z5-CiE" customClass="RootRealTimeTBVC" customModule="PodTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1BR-64-D2Q">
+                <tableViewController title="Nodes At Makaha 1" id="u3H-Z5-CiE" customClass="RootRealTimeTBVC" customModule="PodTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" id="1BR-64-D2Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="tpA-JG-QPa" style="IBUITableViewCellStyleDefault" id="eDE-H2-Bqb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="tpA-JG-QPa" rowHeight="108" style="IBUITableViewCellStyleDefault" id="eDE-H2-Bqb">
+                                <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eDE-H2-Bqb" id="ERX-ge-aNO">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="107"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tpA-JG-QPa">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="107"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -41,11 +41,11 @@
                             <outlet property="delegate" destination="u3H-Z5-CiE" id="auq-Ji-ftt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Real Time Data" id="7Ls-SB-jA4"/>
+                    <navigationItem key="navigationItem" title="Nodes At Makaha 1" id="7Ls-SB-jA4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNw-cw-8cA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616.8" y="-373.76311844077964"/>
+            <point key="canvasLocation" x="1439" y="-368"/>
         </scene>
         <!--30 Day Graph-->
         <scene sceneID="XSz-Mf-SGY">
