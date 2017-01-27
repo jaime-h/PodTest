@@ -1,17 +1,18 @@
 //
-//  RootRealTimeTBVC.swift
-//  TBVCTest
+//  Node4WaterTempTBVC.swift
+//  PodTest
 //
-//  Created by Jaime Hernandez on 1/22/17.
+//  Created by Jaime Hernandez on 1/26/17.
 //  Copyright © 2017 Jaime Hernandez. All rights reserved.
 //
 
 import UIKit
 
-class RootRealTimeTBVC: UITableViewController {
-
-    var pondSites = ["Node 4", "Node 9", "Node 25"]
+class Node4WaterTempTBVC: UITableViewController {
     
+    var nodeArray = ["24 Hours", "Weekly", "Monthly"]
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,37 +35,16 @@ class RootRealTimeTBVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pondSites.count
+        return nodeArray.count
     }
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = pondSites[indexPath.row]
+        cell.textLabel?.text = nodeArray[indexPath.row]
         return cell
-
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0 :
-            let vc = "Node4"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        case 1 :
-            let vc = "Node9"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        case 2 :
-            let vc = "Node25"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        default:
-            let vc = "Node4"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        }
-
-    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -11,6 +11,12 @@
 		226F6D781E383AA900A68364 /* OneDayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D771E383AA900A68364 /* OneDayScrollView.swift */; };
 		226F6D7A1E383B5300A68364 /* OneWeekScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D791E383B5300A68364 /* OneWeekScrollView.swift */; };
 		226F6D7C1E38403B00A68364 /* OneMonthScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D7B1E38403B00A68364 /* OneMonthScrollView.swift */; };
+		226F6D7E1E398E4B00A68364 /* Node4TBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D7D1E398E4B00A68364 /* Node4TBVC.swift */; };
+		226F6D801E39936D00A68364 /* Node4CurrentTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D7F1E39936D00A68364 /* Node4CurrentTBVC.swift */; };
+		226F6D821E3AE04000A68364 /* Node4WaterTempTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D811E3AE04000A68364 /* Node4WaterTempTBVC.swift */; };
+		226F6D841E3AE07C00A68364 /* Node4OxygenConTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */; };
+		226F6D861E3AE09300A68364 /* Node4PressureTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */; };
+		226F6D891E3AE22600A68364 /* Node4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226F6D871E3AE22600A68364 /* Node4.storyboard */; };
 		22B3A40B1DB6951200321598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A40A1DB6951200321598 /* AppDelegate.swift */; };
 		22B3A4101DB6951200321598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A40E1DB6951200321598 /* Main.storyboard */; };
 		22B3A4121DB6951200321598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A4111DB6951200321598 /* Assets.xcassets */; };
@@ -23,6 +29,12 @@
 		226F6D771E383AA900A68364 /* OneDayScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDayScrollView.swift; sourceTree = "<group>"; };
 		226F6D791E383B5300A68364 /* OneWeekScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneWeekScrollView.swift; path = ../OneWeekScrollView.swift; sourceTree = "<group>"; };
 		226F6D7B1E38403B00A68364 /* OneMonthScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMonthScrollView.swift; sourceTree = "<group>"; };
+		226F6D7D1E398E4B00A68364 /* Node4TBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4TBVC.swift; sourceTree = "<group>"; };
+		226F6D7F1E39936D00A68364 /* Node4CurrentTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4CurrentTBVC.swift; sourceTree = "<group>"; };
+		226F6D811E3AE04000A68364 /* Node4WaterTempTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4WaterTempTBVC.swift; sourceTree = "<group>"; };
+		226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4OxygenConTBVC.swift; sourceTree = "<group>"; };
+		226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4PressureTBVC.swift; sourceTree = "<group>"; };
+		226F6D881E3AE22600A68364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Node4.storyboard; sourceTree = "<group>"; };
 		22B3A4071DB6951200321598 /* PodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3A40A1DB6951200321598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B3A40F1DB6951200321598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,12 +82,18 @@
 				226F6D711E38362100A68364 /* RootRealTimeTBVC.swift */,
 				22B3A40A1DB6951200321598 /* AppDelegate.swift */,
 				22B3A40E1DB6951200321598 /* Main.storyboard */,
+				226F6D871E3AE22600A68364 /* Node4.storyboard */,
 				22B3A4111DB6951200321598 /* Assets.xcassets */,
 				22B3A4131DB6951200321598 /* LaunchScreen.storyboard */,
 				22B3A4161DB6951200321598 /* Info.plist */,
 				226F6D771E383AA900A68364 /* OneDayScrollView.swift */,
 				226F6D791E383B5300A68364 /* OneWeekScrollView.swift */,
 				226F6D7B1E38403B00A68364 /* OneMonthScrollView.swift */,
+				226F6D7D1E398E4B00A68364 /* Node4TBVC.swift */,
+				226F6D7F1E39936D00A68364 /* Node4CurrentTBVC.swift */,
+				226F6D811E3AE04000A68364 /* Node4WaterTempTBVC.swift */,
+				226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */,
+				226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */,
 			);
 			path = PodTest;
 			sourceTree = "<group>";
@@ -161,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3A4151DB6951200321598 /* LaunchScreen.storyboard in Resources */,
+				226F6D891E3AE22600A68364 /* Node4.storyboard in Resources */,
 				22B3A4121DB6951200321598 /* Assets.xcassets in Resources */,
 				22B3A4101DB6951200321598 /* Main.storyboard in Resources */,
 			);
@@ -221,17 +240,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226F6D861E3AE09300A68364 /* Node4PressureTBVC.swift in Sources */,
 				226F6D721E38362100A68364 /* RootRealTimeTBVC.swift in Sources */,
 				22B3A40B1DB6951200321598 /* AppDelegate.swift in Sources */,
 				226F6D781E383AA900A68364 /* OneDayScrollView.swift in Sources */,
+				226F6D841E3AE07C00A68364 /* Node4OxygenConTBVC.swift in Sources */,
+				226F6D7E1E398E4B00A68364 /* Node4TBVC.swift in Sources */,
 				226F6D7A1E383B5300A68364 /* OneWeekScrollView.swift in Sources */,
+				226F6D821E3AE04000A68364 /* Node4WaterTempTBVC.swift in Sources */,
 				226F6D7C1E38403B00A68364 /* OneMonthScrollView.swift in Sources */,
+				226F6D801E39936D00A68364 /* Node4CurrentTBVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		226F6D871E3AE22600A68364 /* Node4.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226F6D881E3AE22600A68364 /* Base */,
+			);
+			name = Node4.storyboard;
+			sourceTree = "<group>";
+		};
 		22B3A40E1DB6951200321598 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

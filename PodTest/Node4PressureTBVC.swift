@@ -1,69 +1,47 @@
 //
-//  RootRealTimeTBVC.swift
-//  TBVCTest
+//  Node4PressureTBVC.swift
+//  PodTest
 //
-//  Created by Jaime Hernandez on 1/22/17.
+//  Created by Jaime Hernandez on 1/26/17.
 //  Copyright © 2017 Jaime Hernandez. All rights reserved.
 //
 
 import UIKit
 
-class RootRealTimeTBVC: UITableViewController {
+class Node4PressureTBVC: UITableViewController {
 
-    var pondSites = ["Node 4", "Node 9", "Node 25"]
+    var nodeArray = ["24 Hours", "Weekly", "Monthly"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pondSites.count
+        return nodeArray.count
     }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = pondSites[indexPath.row]
+        cell.textLabel?.text = nodeArray[indexPath.row]
         return cell
-
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0 :
-            let vc = "Node4"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        case 1 :
-            let vc = "Node9"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        case 2 :
-            let vc = "Node25"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        default:
-            let vc = "Node4"
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
-            self.navigationController?.pushViewController(viewController!, animated: true)
-        }
-
     }
 
     /*
