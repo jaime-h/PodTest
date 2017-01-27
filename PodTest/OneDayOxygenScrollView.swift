@@ -12,6 +12,7 @@ import SwiftyJSON
 import Foundation
 import ScrollableGraphView
 
+@IBDesignable
 class OneDayOxygenScrollView: UIViewController {
     
         var phData = [Double]()
@@ -29,7 +30,7 @@ class OneDayOxygenScrollView: UIViewController {
             
             // TODO: - Create a new class for the retrival of data?
             // Changed to pull data for 1 days
-            let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/O2Concentration.json?minutes=1440"
+            let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/O2Concentration.json?minutes=1440&max_count=150"
             
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
             

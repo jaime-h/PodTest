@@ -12,6 +12,8 @@ import Alamofire
 import SwiftyJSON
 import Foundation
 import ScrollableGraphView
+
+@IBDesignable
 class OneWeekOxygenScrollView: UIViewController {
 
     
@@ -30,7 +32,7 @@ class OneWeekOxygenScrollView: UIViewController {
         
         // TODO: - Create a new class for the retrival of data?
         // Changed to pull data for 1 days
-        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/O2Concentration.json?minutes=10800"
+        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/O2Concentration.json?minutes=10800&max_count=500"
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
