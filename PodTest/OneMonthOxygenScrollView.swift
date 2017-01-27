@@ -1,8 +1,8 @@
 //
-//  OneMonthScrollView.swift
+//  OneMonthOxygenScrollView.swift
 //  PodTest
 //
-//  Created by Jaime Hernandez on 1/24/17.
+//  Created by Jaime Hernandez on 1/26/17.
 //  Copyright © 2017 Jaime Hernandez. All rights reserved.
 //
 
@@ -12,8 +12,7 @@ import SwiftyJSON
 import Foundation
 import ScrollableGraphView
 
-@IBDesignable
-class OneMonthScrollView: UIViewController {
+class OneMonthOxygenScrollView: UIViewController {
     
     var phData = [Double]()
     var resData = [Double]()
@@ -29,8 +28,8 @@ class OneMonthScrollView: UIViewController {
         super.viewDidLoad()
         
         // TODO: - Create a new class for the retrival of data?
-        // Changed to pull data for 30 days
-        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/Temperature.json?minutes=43200"
+        // Changed to pull data for 1 days
+        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/O2Concentration.json?minutes=43200"
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -43,7 +42,7 @@ class OneMonthScrollView: UIViewController {
                 
                 // After serialization grab the data arrays - there are two of them....
                 self.resData = swiftyJsonVar["samples"]["ReceptionTime"].arrayObject as! [Double]
-                self.phData = swiftyJsonVar["samples"]["Temperature"].arrayObject as! [Double]
+                self.phData = swiftyJsonVar["samples"]["O2Concentration"].arrayObject as! [Double]
                 
                 // loop through the arrays and write out the data....
                 

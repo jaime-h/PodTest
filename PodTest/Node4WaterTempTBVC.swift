@@ -45,7 +45,30 @@ class Node4WaterTempTBVC: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0 :
+            let vc = "24Hours"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        case 1 :
+            let vc = "OneWeek"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        case 2 :
+            let vc = "OneMonth"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        default:
+            let vc = "24Hours"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        }
+        
+    }
 
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
