@@ -17,6 +17,8 @@
 		226F6D841E3AE07C00A68364 /* Node4OxygenConTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */; };
 		226F6D861E3AE09300A68364 /* Node4PressureTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */; };
 		226F6D891E3AE22600A68364 /* Node4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226F6D871E3AE22600A68364 /* Node4.storyboard */; };
+		226F6D8C1E3AE9B400A68364 /* Node9TBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D8B1E3AE9B400A68364 /* Node9TBVC.swift */; };
+		226F6D8E1E3AEB1500A68364 /* Node25TBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F6D8D1E3AEB1500A68364 /* Node25TBVC.swift */; };
 		22B3A40B1DB6951200321598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3A40A1DB6951200321598 /* AppDelegate.swift */; };
 		22B3A4101DB6951200321598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A40E1DB6951200321598 /* Main.storyboard */; };
 		22B3A4121DB6951200321598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3A4111DB6951200321598 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4OxygenConTBVC.swift; sourceTree = "<group>"; };
 		226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node4PressureTBVC.swift; sourceTree = "<group>"; };
 		226F6D881E3AE22600A68364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Node4.storyboard; sourceTree = "<group>"; };
+		226F6D8B1E3AE9B400A68364 /* Node9TBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node9TBVC.swift; sourceTree = "<group>"; };
+		226F6D8D1E3AEB1500A68364 /* Node25TBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node25TBVC.swift; sourceTree = "<group>"; };
 		22B3A4071DB6951200321598 /* PodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3A40A1DB6951200321598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B3A40F1DB6951200321598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		226F6D8A1E3AE94B00A68364 /* Node4 */ = {
+			isa = PBXGroup;
+			children = (
+				226F6D7D1E398E4B00A68364 /* Node4TBVC.swift */,
+				226F6D7F1E39936D00A68364 /* Node4CurrentTBVC.swift */,
+				226F6D811E3AE04000A68364 /* Node4WaterTempTBVC.swift */,
+				226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */,
+				226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */,
+			);
+			name = Node4;
+			sourceTree = "<group>";
+		};
 		22B3A3FE1DB6951200321598 = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +105,9 @@
 				226F6D771E383AA900A68364 /* OneDayScrollView.swift */,
 				226F6D791E383B5300A68364 /* OneWeekScrollView.swift */,
 				226F6D7B1E38403B00A68364 /* OneMonthScrollView.swift */,
-				226F6D7D1E398E4B00A68364 /* Node4TBVC.swift */,
-				226F6D7F1E39936D00A68364 /* Node4CurrentTBVC.swift */,
-				226F6D811E3AE04000A68364 /* Node4WaterTempTBVC.swift */,
-				226F6D831E3AE07C00A68364 /* Node4OxygenConTBVC.swift */,
-				226F6D851E3AE09300A68364 /* Node4PressureTBVC.swift */,
+				226F6D8A1E3AE94B00A68364 /* Node4 */,
+				226F6D8B1E3AE9B400A68364 /* Node9TBVC.swift */,
+				226F6D8D1E3AEB1500A68364 /* Node25TBVC.swift */,
 			);
 			path = PodTest;
 			sourceTree = "<group>";
@@ -244,12 +258,14 @@
 				226F6D721E38362100A68364 /* RootRealTimeTBVC.swift in Sources */,
 				22B3A40B1DB6951200321598 /* AppDelegate.swift in Sources */,
 				226F6D781E383AA900A68364 /* OneDayScrollView.swift in Sources */,
+				226F6D8C1E3AE9B400A68364 /* Node9TBVC.swift in Sources */,
 				226F6D841E3AE07C00A68364 /* Node4OxygenConTBVC.swift in Sources */,
 				226F6D7E1E398E4B00A68364 /* Node4TBVC.swift in Sources */,
 				226F6D7A1E383B5300A68364 /* OneWeekScrollView.swift in Sources */,
 				226F6D821E3AE04000A68364 /* Node4WaterTempTBVC.swift in Sources */,
 				226F6D7C1E38403B00A68364 /* OneMonthScrollView.swift in Sources */,
 				226F6D801E39936D00A68364 /* Node4CurrentTBVC.swift in Sources */,
+				226F6D8E1E3AEB1500A68364 /* Node25TBVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
