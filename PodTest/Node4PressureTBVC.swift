@@ -44,6 +44,30 @@ class Node4PressureTBVC: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0 :
+            let vc = "PressureDaily"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        case 1 :
+            let vc = "PressureWeekly"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        case 2 :
+            let vc = "PressureMonthly"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        default:
+            let vc = "PressureDaily"
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        }
+        
+    }
+
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
