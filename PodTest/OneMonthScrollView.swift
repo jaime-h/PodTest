@@ -30,7 +30,7 @@ class OneMonthScrollView: UIViewController {
         
         // TODO: - Create a new class for the retrival of data?
         // Changed to pull data for 30 days
-        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/Temperature.json?minutes=43200"
+        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/Temperature.json?minutes=43200&max_count=500"
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -70,8 +70,8 @@ class OneMonthScrollView: UIViewController {
                 let labels = self.dateData
                 
                 graphView.shouldAnimateOnStartup = false
-                graphView.numberOfIntermediateReferenceLines = 5
-                graphView.referenceLineNumberOfDecimalPlaces = 4
+                graphView.numberOfIntermediateReferenceLines = 6
+                graphView.referenceLineNumberOfDecimalPlaces = 3
                 
                 graphView.rangeMin = minPh! as Double
                 graphView.rangeMax = maxPh! as Double

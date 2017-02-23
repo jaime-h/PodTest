@@ -10,7 +10,7 @@ import UIKit
 
 class RootRealTimeTBVC: UITableViewController {
 
-    var pondSites = ["Node 4", "Node 9", "Node 25"]
+    var pondSites = ["Node 4", "Node 9"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

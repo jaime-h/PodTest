@@ -47,19 +47,19 @@ class Node4PressureTBVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0 :
-            let vc = "PressureDaily"
+            let vc = "OneDayPress"
             let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
             self.navigationController?.pushViewController(viewController!, animated: true)
         case 1 :
-            let vc = "PressureWeekly"
+            let vc = "OneWeekPress"
             let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
             self.navigationController?.pushViewController(viewController!, animated: true)
         case 2 :
-            let vc = "PressureMonthly"
+            let vc = "OneMonthPress"
             let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
             self.navigationController?.pushViewController(viewController!, animated: true)
         default:
-            let vc = "PressureDaily"
+            let vc = "OneDayPress"
             let viewController = storyboard?.instantiateViewController(withIdentifier: vc)
             self.navigationController?.pushViewController(viewController!, animated: true)
         }

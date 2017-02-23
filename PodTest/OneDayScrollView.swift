@@ -5,7 +5,6 @@
 //  Created by Jaime Hernandez on 1/24/17.
 //  Copyright © 2017 Jaime Hernandez. All rights reserved.
 //
-
 //
 
 import UIKit
@@ -32,7 +31,7 @@ class OneDayScrollView: UIViewController {
         
         // TODO: - Create a new class for the retrival of data?
         // Changed to pull data for 1 days
-        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/Temperature.json?minutes=1440&max_count=144"
+        let myUrl: String = "https://grogdata.soest.hawaii.edu/poh/data/node-004/Temperature.json?minutes=1440&max_count=250"
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
